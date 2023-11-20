@@ -1,0 +1,14 @@
+<form
+  [formGroup]="areaForm"
+  class="row justify-content-center"
+>
+  <mat-form-field appearance="outline">
+    <mat-label>Nombre</mat-label>
+    <textarea matInput formControlName="name" placeholder="Pegue aquí su JSON">
+    </textarea>
+  </mat-form-field>
+  <button (click)="procesarEntrada()">Procesar Entrada</button>
+</form>
+
+<textarea [formControl]="result" placeholder=""> </textarea>
+<textarea [formControl]="resultGroup" placeholder=""> </textarea>

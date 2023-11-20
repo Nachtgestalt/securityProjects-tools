@@ -9,16 +9,12 @@
     <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
                 [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
       <mat-nav-list>
-        @for (nav of fillerNav; track nav) {
-          <a mat-list-item routerLink=".">{{nav}}</a>
-        }
+          <a mat-list-item routerLink="./rulebase-cp">{{"Obtener info de reglas CP"}}</a>
       </mat-nav-list>
     </mat-sidenav>
 
     <mat-sidenav-content>
-      @for (content of fillerContent; track content) {
-  <p>{{content}}</p>
-}
+      <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>

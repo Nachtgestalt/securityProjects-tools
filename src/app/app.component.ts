@@ -13,7 +13,7 @@ export class AppComponent {
   fillerNav = Array.from({length: 50}, (_, i) => `Nav Item ${i + 1}`);
 
   fillerContent = Array.from(
-    {length: 50},
+    {length: 2},
     () =>
       `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
